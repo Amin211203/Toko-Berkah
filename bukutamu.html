@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Berkah</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--my style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--navbar start-->
+    <nav class="amin_navbar">
+      <a href="#" class="navbar-logo">Toko<span>Berkah</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="bukutamu.html">Buku Tamu</a>
+      </div>
+
+      <div class="navbar-extra">
+        <div class="navbar-extra">
+          <a href="#" id="search-button"><i data-feather="search"></i></a>
+         
+        <a href="#" id="amin_hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+        <!--cari start-->
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!--cari end-->
+        
+    </nav>
+    <!--navbar end-->
+    <!--buku tamu start-->
+     <section id="amin_bukutamu" class="amin_bukutamu">
+      <div class="row">
+       
+        <form action="" name="amin_bukutamu">
+          <img src="img/bukutamu.jpeg" width="350" alt="Tentang Kami" class="img" />
+          <div class="input-group">
+            <input type="text" placeholder="Nama" name="nama"/>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email" name="email"/>
+          </div>
+          <div class="input-group">
+            <input type="text-area" placeholder="Pesan" name="pesan"/>
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+   
+
+    <!--buku tamu end-->
+
+    <!--footter star-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="bukutamu.html">Buku Tamu</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Amin Solehudin</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script>
+      feather.replace();
+    </script>
+    <!---javascript-->
+    <script src="js/script.js"></script>
+   
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbykE5sLULLNM_5MG3LePJbOvIj_dJ7oZtG2OUB5qfdZP_g5VCj9vxx7ezUlK-0pUmPLZw/exec'
+      const form = document.forms['amin_bukutamu']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>

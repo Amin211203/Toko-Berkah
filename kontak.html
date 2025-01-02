@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Berkah</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--my style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--navbar start-->
+    <nav class="amin_navbar">
+      <a href="#" class="navbar-logo">Toko<span>Berkah</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="bukutamu.html">Buku Tamu</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+    
+        <a href="#" id="amin_hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!--cari start-->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!--cari end-->
+       <!--keranjang-->
+       <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+    </nav>
+    </nav>
+    <!--navbar end-->
+    <!--kontak start-->
+    <section id="amin_contact" class="amin_contact">
+      <h2><span>Kontak </span>Kami</h2>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0131320745922!2d108.22022337357265!3d-7.352420872333941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5770cd3fd521%3A0x7df02d82c51f464f!2sUniversitas%20Perjuangan%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1731138824855!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="kontak-container">
+          <h2>Informasi Kontak</h2>
+
+          <div class="form-group">
+            <i data-feather="user"></i>
+            <input type="text" id="nama" value="Toko Berkah" readonly />
+          </div>
+
+          <div class="form-group">
+            <i data-feather="phone"></i>
+            <input type="text" id="telepon" value="085724595430" readonly />
+          </div>
+
+          <div class="form-group">
+            <i data-feather="mail"></i>
+            <input
+              type="email"
+              id="email"
+              value="tokoberkah@gmail.com"
+              readonly
+            />
+          </div>
+
+          <div class="form-group">
+            <i data-feather="map-pin"></i>
+            <input
+              type="text"
+              id="alamat"
+              value="Jl. Gunung Roay , Tasikmalaya"
+              readonly
+            />
+          </div>
+
+          <div class="form-group">
+            <i data-feather="clock"></i>
+            <input
+              type="text"
+              id="jam"
+              value="Senin - Sabtu, 08:00 - 18:00 WIB"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--kontak end-->
+    <!--footter star-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="bukutamu.html">Buku  Tamu</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Amin Solehudin</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script>
+      feather.replace();
+    </script>
+    <!---javascript-->
+    <script src="js/script.js"></script>
+    <!--about end-->
+  </body>
+</html>
